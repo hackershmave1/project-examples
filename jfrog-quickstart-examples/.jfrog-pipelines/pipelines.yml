@@ -3,7 +3,7 @@ resources:
     type: GitRepo
     configuration:
       gitProvider: shmaver_github
-      path: hackershmave1/project-examples/
+      path: hackershmave1/project-examples
       branches:
         include: master
   - name: myBuildInfo
