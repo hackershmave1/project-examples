@@ -1,5 +1,7 @@
 pipelines:
   - name: shmavers_pipeline
+    configuration:
+      nodePool:   ubuntu20aws 
     steps:
       - name: shmaver_step
         type: Bash
