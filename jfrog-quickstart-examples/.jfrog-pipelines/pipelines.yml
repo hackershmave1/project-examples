@@ -1,13 +1,12 @@
 pipelines:
   - name: shmavers_pipeline
     configuration:
-      nodePool:   ubuntu20aws 
+      nodePool:   ubuntu 
     steps:
       - name: shmaver_step
         type: Bash
         configuration:
-          inputResources:
-            - name: my_property_bag
+          nodePool: ubuntu
         execution:
           onExecute:
             - echo "running shell"
