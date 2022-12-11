@@ -1,7 +1,4 @@
 pipelines:
-  logging:
-    application:
-      level: debug
   - name: shmavers_pipeline
     configuration:
       nodePool: ubuntu
