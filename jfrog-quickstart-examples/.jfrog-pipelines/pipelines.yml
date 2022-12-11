@@ -7,7 +7,6 @@ pipelines:
           env1:     secret
           env2:     
             default: secret
-            description: <img src='x'>
             values:
              - test
              - secret
@@ -20,7 +19,6 @@ pipelines:
           environmentVariables:
             step_env1:
               default: secret
-                description: <img src='x'>
                 values:
                   - test
                   - secret
