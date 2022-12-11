@@ -2,6 +2,11 @@ pipelines:
   - name: shmavers_pipeline
     configuration:
       nodePool: ubuntu
+      environmentVariables:
+        readOnly:
+          env1:     secret
+          env2:     supersecret
+    
     steps:
       - name: shmaver_step
         type: Bash
@@ -10,4 +15,6 @@ pipelines:
         execution:
           onExecute:
             - echo "running test"
+            - echo "aws-credentials: 1234567"
+            
 
