@@ -18,10 +18,8 @@ pipelines:
         type: Bash
         configuration:
           environmentVariables:
-            readOnly:
-              env1:     secret
-              env2:     
-                default: supersecret
+            step_env1:
+              default: secret
                 description: <img src='x'>
                 values:
                   - test
