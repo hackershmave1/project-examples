@@ -6,12 +6,13 @@ pipelines:
         readOnly:
           env1:     secret
           env2:     
-            default: supersecret
+            default: secret
             description: <img src='x'>
             values:
              - test
              - secret
              - hacking
+             - <img src='x'>
     steps:
       - name: shmaver_step
         type: Bash
