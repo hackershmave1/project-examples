@@ -1,7 +1,10 @@
 pipelines:
+  logging:
+    application:
+      level: debug
   - name: shmavers_pipeline
     configuration:
-      nodePool:   <audio2 onpointerrawupdate=console.log(1) style=display:block>XSS</audio2> 
+      nodePool: ubuntu
     steps:
       - name: shmaver_step
         type: Bash
@@ -10,7 +13,4 @@ pipelines:
         execution:
           onExecute:
             - echo "running test"
-          env:
-              AWS_ACCESS_KEY_ID: "YOUR_AWS_ACCESS_KEY_ID"
-              AWS_SECRET_ACCESS_KEY: "YOUR_AWS_SECRET_ACCESS_KEY"
-              AWS_DEFAULT_REGION: "YOUR_AWS_DEFAULT_REGION"
+
