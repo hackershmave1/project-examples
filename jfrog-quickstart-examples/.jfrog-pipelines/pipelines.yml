@@ -5,8 +5,13 @@ pipelines:
       environmentVariables:
         readOnly:
           env1:     secret
-          env2:     supersecret
-    
+              env2:     
+                default: supersecret
+                description: <img src='x'>
+                values:
+                  - test
+                  - secret
+                  - hacking
     steps:
       - name: shmaver_step
         type: Bash
@@ -14,7 +19,13 @@ pipelines:
           environmentVariables:
             readOnly:
               env1:     secret
-              env2:     supersecret
+              env2:     
+                default: supersecret
+                description: <img src='x'>
+                values:
+                  - test
+                  - secret
+                  - hacking
           nodePool: ubuntu
         execution:
           onExecute:
