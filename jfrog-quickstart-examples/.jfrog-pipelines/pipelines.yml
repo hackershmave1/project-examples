@@ -1,12 +1,12 @@
 pipelines:
   - name: shmavers_pipeline
     configuration:
-      nodePool: ubuntu
+      nodePool: default
     steps:
       - name: shmaver_step
         type: Bash
         configuration:
-          nodePool: ubuntu
+          nodePool: default
         execution:
           onExecute:
             - echo _${env1}
